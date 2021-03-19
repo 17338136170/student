@@ -35,13 +35,13 @@ public class CodeGenerator {
         //dsc.setSchemaName("user");
         dsc.setDriverName("com.mysql.cj.jdbc.Driver");
         dsc.setUsername("root");
-        dsc.setPassword("123456");
+        dsc.setPassword("root");
         dsc.setDbType(DbType.MYSQL);
         mpg.setDataSource(dsc);
         // 包配置
         PackageConfig pc = new PackageConfig();
-        pc.setModuleName("blog");
-        pc.setParent("com.tkamc");
+       // pc.setModuleName("blog");
+        pc.setParent("com.student");
         pc.setEntity("entity");
         pc.setMapper("mapper");
         pc.setController("controller");

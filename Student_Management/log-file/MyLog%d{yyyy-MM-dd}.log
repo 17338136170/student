@@ -2620,4 +2620,18 @@ Consider the following:
 [0;39m[31m2021-03-19 23:58:00[0;39m [34mINFO [0;39m [31m[main][0;39m [1;35mo.s.boot.web.embedded.tomcat.TomcatWebServer[0;39m [36mTomcat started on port(s): 8300 (http) with context path '/Student_Management'
 [0;39m[31m2021-03-19 23:58:00[0;39m [34mINFO [0;39m [31m[main][0;39m [1;35mcom.student.Main[0;39m [36mStarted Main in 1.93 seconds (JVM running for 2.735)
 [0;39m[31m2021-03-19 23:58:07[0;39m [34mINFO [0;39m [31m[SpringContextShutdownHook][0;39m [1;35mo.s.scheduling.concurrent.ThreadPoolTaskExecutor[0;39m [36mShutting down ExecutorService 'applicationTaskExecutor'
+[0;39m[31m2021-03-20 00:41:41[0;39m [34mINFO [0;39m [31m[main][0;39m [1;35mcom.student.Main[0;39m [36mStarting Main using Java 14.0.1 on LAPTOP-60I0NSIN with PID 4132 (D:\ideaworks\student\Student_Management\target\classes started by zhaohao in D:\ideaworks\student\Student_Management)
+[0;39m[31m2021-03-20 00:41:41[0;39m [34mINFO [0;39m [31m[main][0;39m [1;35mcom.student.Main[0;39m [36mThe following profiles are active: static,test
+[0;39m[31m2021-03-20 00:41:42[0;39m [34mINFO [0;39m [31m[main][0;39m [1;35mo.s.boot.web.embedded.tomcat.TomcatWebServer[0;39m [36mTomcat initialized with port(s): 8300 (http)
+[0;39m[31m2021-03-20 00:41:42[0;39m [34mINFO [0;39m [31m[main][0;39m [1;35morg.apache.coyote.http11.Http11NioProtocol[0;39m [36mInitializing ProtocolHandler ["http-nio-8300"]
+[0;39m[31m2021-03-20 00:41:42[0;39m [34mINFO [0;39m [31m[main][0;39m [1;35morg.apache.catalina.core.StandardService[0;39m [36mStarting service [Tomcat]
+[0;39m[31m2021-03-20 00:41:42[0;39m [34mINFO [0;39m [31m[main][0;39m [1;35morg.apache.catalina.core.StandardEngine[0;39m [36mStarting Servlet engine: [Apache Tomcat/9.0.44]
+[0;39m[31m2021-03-20 00:41:42[0;39m [34mINFO [0;39m [31m[main][0;39m [1;35mo.a.c.c.C.[.[localhost].[/Student_Management][0;39m [36mInitializing Spring embedded WebApplicationContext
+[0;39m[31m2021-03-20 00:41:42[0;39m [34mINFO [0;39m [31m[main][0;39m [1;35mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m [36mRoot WebApplicationContext: initialization completed in 864 ms
+[0;39m[31m2021-03-20 00:41:42[0;39m [34mINFO [0;39m [31m[main][0;39m [1;35mo.s.scheduling.concurrent.ThreadPoolTaskExecutor[0;39m [36mInitializing ExecutorService 'applicationTaskExecutor'
+[0;39m[31m2021-03-20 00:41:42[0;39m [31mWARN [0;39m [31m[main][0;39m [1;35morg.thymeleaf.templatemode.TemplateMode[0;39m [36m[THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+[0;39m[31m2021-03-20 00:41:42[0;39m [34mINFO [0;39m [31m[main][0;39m [1;35morg.apache.coyote.http11.Http11NioProtocol[0;39m [36mStarting ProtocolHandler ["http-nio-8300"]
+[0;39m[31m2021-03-20 00:41:43[0;39m [34mINFO [0;39m [31m[main][0;39m [1;35mo.s.boot.web.embedded.tomcat.TomcatWebServer[0;39m [36mTomcat started on port(s): 8300 (http) with context path '/Student_Management'
+[0;39m[31m2021-03-20 00:41:43[0;39m [34mINFO [0;39m [31m[main][0;39m [1;35mcom.student.Main[0;39m [36mStarted Main in 1.977 seconds (JVM running for 2.704)
+[0;39m[31m2021-03-20 00:41:55[0;39m [34mINFO [0;39m [31m[SpringContextShutdownHook][0;39m [1;35mo.s.scheduling.concurrent.ThreadPoolTaskExecutor[0;39m [36mShutting down ExecutorService 'applicationTaskExecutor'
 [0;39m
