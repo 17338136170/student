@@ -1,9 +1,10 @@
 package com.student.service.impl;
 
-import com.student.dao.UserMapper;
+
 import com.student.entity.User;
-import com.student.service.Userervices;
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.student.mapper.UserMapper;
+import com.student.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -15,7 +16,15 @@ import org.springframework.stereotype.Service;
  * @since 2021-03-20
  */
 @Service
-public class UserServiceImpl  implements Userervices {
+public class UserServiceImpl  implements UserService {
 
+    @Autowired
+    UserMapper userMapper;
+    @Override
+    public Integer insertUser(String userName, String password) {
+        User  user = User.builder().username(userName).password(password).build();
+        Integer num=userMapper.insertUser(user);
+        return  num;
 
+    }
 }

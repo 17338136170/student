@@ -1,7 +1,8 @@
-package com.student.dao;
+package com.student.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.student.entity.User;
+import org.apache.ibatis.annotations.Param;
 
 /**
  * <p>
@@ -13,4 +14,5 @@ import com.student.entity.User;
  */
 public interface UserMapper extends BaseMapper<User> {
 
+    Integer insertUser(@Param(value = "user") User user);
 }

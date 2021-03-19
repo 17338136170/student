@@ -3,8 +3,7 @@ package com.student.entity;
 import com.baomidou.mybatisplus.annotation.IdType;
 import java.util.Date;
 import com.baomidou.mybatisplus.annotation.TableId;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
+import lombok.*;
 
 /**
  * <p>
@@ -15,6 +14,10 @@ import lombok.EqualsAndHashCode;
  * @since 2021-03-20
  */
 @Data
+@Builder
+@NoArgsConstructor // 无参构造函数
+@AllArgsConstructor // 有参构造函数
+
 @EqualsAndHashCode()
 public class User  {
 
