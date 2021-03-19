@@ -1,13 +1,15 @@
 package com.student;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class StudentManagementApplication {
+@MapperScan("com.student.dao")
+public class Main {
 
     public static void main(String[] args) {
-        SpringApplication.run(StudentManagementApplication.class, args);
+        SpringApplication.run(Main.class, args);
     }
 
 }

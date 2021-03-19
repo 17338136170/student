@@ -1,0 +1,20 @@
+server:
+  port: 8300
+  servlet:
+    context-path: /Student_Management
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: HTML5
+    encoding: UTF-8
+    cache: false
+    servlet:
+      content-type: text/html
+  application:
+    name: web-demo
+logging:
+  config: classpath:logback-spring.xml
+mybatis-plus:
+  mapper-locations: classpath:com/student/mapper/*.xml
+
