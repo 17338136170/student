@@ -1,0 +1,147 @@
+html, body, div, span, input, button, figure, i, h1, h2, h3, h4, h5, h6, em, img, strong, sub, sup, tt, dd, dl, dt, form, label, table, caption, tbody, tfoot, thead, tr, th, td, ul, ol, li, p, a {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body {
+    font: 14px/1.5 "PingFang SC", "Lantinghei SC", "Microsoft YaHei", "HanHei SC", "Helvetica Neue", "Open Sans", Arial, "Hiragino Sans GB", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
+	background-color:#f4f4f4;
+}
+.wrapbag{
+	margin:50px auto 0;
+	overflow: hidden;
+	text-align: center;
+}
+.bg01{
+	width: 100%;
+	background: url(../img/pexels-photo-03.jpg) top center;
+}
+.login{
+	width: 320px;
+	height: 330px;
+	padding: 30px 50px;
+	background: #ffffff;
+	position: relative;
+	margin:130px auto 100px;
+	-webkit-box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+	float:clear;
+}
+.tit{
+	font-size: 28px;
+	margin:20px auto 2.5rem;
+	text-align: center;
+}
+.form-control {
+	width: 320px;
+    height: 42px;
+    padding-left: 35px;
+    padding-right: 20px;
+    color: #666666;
+    font-size: 14px;
+    border: 1px solid #dddddd;
+    background: #f4f4f4;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+	margin-bottom: 20px;
+}
+.name{
+	background: url(../img/zhanghu.png) 10px center no-repeat;
+}
+.password{
+	background: url(../img/mima.png) 10px center no-repeat;
+}
+#loginbtn {
+    width: 320px;
+    height: 42px;
+    font-size: 16px;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	color: #ffffff;
+	background:#4e6ef2;
+	border: 1px solid #eeeeee;
+	border-radius: 4px;
+	cursor: pointer;
+	text-align: center;
+	cursor: default;
+}
+#loginbtn:hover{
+	background:#4662d9;
+}
+.login-links{
+	margin:20px auto;
+	color: #999999;
+	float:right;
+	font-size: 14px;
+}
+.register{
+	width: 900px;
+	padding-top: 48px;
+	margin:0 auto;
+}
+
+.passcard-nav {
+	float: clear;
+    padding: 40px 0 20px;
+    line-height: 24px;	
+}
+.tit02{
+	font-size:28px;
+	float:left;
+}
+.yzhanghao{
+	font-size: 14px;
+	color: #666666;
+	float:right;
+}
+.main-link-color {
+    color: #4e6ef2;
+}
+.passcon {
+    min-height: 394px;
+    margin: 30px 0 150px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    background: #ffffff;
+}
+.passcon .passmail-title {
+    height: 76px;
+    line-height: 76px;
+    font-size: 24px;
+    text-align: center;
+    font-weight: normal;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.main-bg-color {
+    /*background: #ffe300;*/
+	width:100%;
+    color: #ffffff;
+	background: url(../img/pexels-photo-02.png) left center;
+}
+.zhuce-box{
+	width: 336px;
+	padding: 40px 0 40px;
+	border-top: none;
+	margin: 0 auto;
+}
+.footer{
+	font-size: 12px;
+	color: #999999;
+	text-align: center;
+	margin-bottom: 8px;
+}
+.white{
+	color:#FFFFFF !important;
+	opacity: 0.8;
+}

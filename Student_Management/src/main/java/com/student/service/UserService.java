@@ -15,8 +15,14 @@ import org.apache.ibatis.annotations.Param;
 public interface UserService {
     /**
      * 注册用户
-     * @param userNmae
-     * @param password
+     * @param user
      */
-    Integer insertUser(@Param(value = "userNmae") String userNmae, @Param(value = "password") String password);
+    Integer insertUser(@Param(value = "user") User user);
+
+    /**
+     * 登陆
+     * @param user
+     * @return
+     */
+    Integer login(User user);
 }

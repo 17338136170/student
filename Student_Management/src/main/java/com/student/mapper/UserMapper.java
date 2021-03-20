@@ -15,4 +15,6 @@ import org.apache.ibatis.annotations.Param;
 public interface UserMapper extends BaseMapper<User> {
 
     Integer insertUser(@Param(value = "user") User user);
+
+    Integer login(User user);
 }

@@ -21,10 +21,15 @@ public class UserServiceImpl  implements UserService {
     @Autowired
     UserMapper userMapper;
     @Override
-    public Integer insertUser(String userName, String password) {
-        User  user = User.builder().username(userName).password(password).build();
-        Integer num=userMapper.insertUser(user);
+    public Integer insertUser(User user) {
+        Integer num=userMapper.insert(user);
         return  num;
 
+    }
+
+    @Override
+    public Integer login(User user) {
+        Integer num=userMapper.login(user);
+        return num;
     }
 }

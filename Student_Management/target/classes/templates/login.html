@@ -1,19 +1,31 @@
-<!DOCTYPE HTML>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" >
-<head>
-    <title>Getting Started: Serving Web Content</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link th:href="@{/css/1.css}" rel="stylesheet"/>
-</head>
-<body>
-<p th:text="'Hello, ' + ${title}" /><br/>
-<p th:text="'Hello, ' + ${username}" /><br/>
-
-<script th:src="@{/js/jquery/1.11.0/jquery.js}"></script>
-<script>
-    $(function(){
-       alert("page load finish.");
-    });
-</script>
-</body>
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+<!--		<link rel="stylesheet" type="text/css" th:href="@{css/login.css}">-->
+		<link rel="stylesheet" type="text/css" th:href="@{/static/css/login.css}">
+	</head>
+	<body class="bg01">
+		<div class="wrapbag">
+			<div class="login">
+				<div class="tit">登录系统</div>
+				<form th:action="@{/user/login}"  method="post">
+					<input type="text" name="username" class="form-control name" placeholder="用户名" data-error="用户名不能为空" required>
+					<input type="password" name="password" class="form-control password" placeholder="密码" data-error="密码不能为空" required>
+					<input type="submit" id="loginbtn" class="btn" value="登录">
+					<div class="login-links">
+						<a class="wangji">忘记密码</a>
+						&nbsp; | &nbsp;
+						<a class="zhuce" th:href="@{/user/register}">注册</a>
+					</div>
+				</form>
+			</div>
+			<div class="footer  white">
+				<p>京ICP备11017824号-4 Copyright © 2006-2018 </p>
+			</div>
+		</div>
+		<script  th:src="@{/static/js/jquery.min.js}" ></script>
+		<script  th:src="@{/static/js/login.js}" ></script>
+	</body>
 </html>
