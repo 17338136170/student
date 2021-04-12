@@ -18,7 +18,7 @@ public class CodeGenerator {
         //全局配置
         GlobalConfig gc = new GlobalConfig();
         String property = System.getProperty("user.dir");
-        gc.setOutputDir(property+"/src/mian/java");
+        gc.setOutputDir(property + "/src/mian/java");
         gc.setAuthor("zhaohao");
         gc.setOpen(false);
         //是否覆盖原来
@@ -40,7 +40,7 @@ public class CodeGenerator {
         mpg.setDataSource(dsc);
         // 包配置
         PackageConfig pc = new PackageConfig();
-       // pc.setModuleName("blog");
+        // pc.setModuleName("blog");
         pc.setParent("com.student");
         pc.setEntity("entity");
         pc.setMapper("mapper");

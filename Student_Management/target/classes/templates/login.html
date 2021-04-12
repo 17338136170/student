@@ -1,31 +1,37 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-	<head>
-		<meta charset="utf-8" />
-		<title></title>
-<!--		<link rel="stylesheet" type="text/css" th:href="@{css/login.css}">-->
-		<link rel="stylesheet" type="text/css" th:href="@{/static/css/login.css}">
-	</head>
-	<body class="bg01">
-		<div class="wrapbag">
-			<div class="login">
-				<div class="tit">登录系统</div>
-				<form th:action="@{/user/login}"  method="post">
-					<input type="text" name="username" class="form-control name" placeholder="用户名" data-error="用户名不能为空" required>
-					<input type="password" name="password" class="form-control password" placeholder="密码" data-error="密码不能为空" required>
-					<input type="submit" id="loginbtn" class="btn" value="登录">
-					<div class="login-links">
-						<a class="wangji">忘记密码</a>
-						&nbsp; | &nbsp;
-						<a class="zhuce" th:href="@{/user/register}">注册</a>
-					</div>
-				</form>
-			</div>
-			<div class="footer  white">
-				<p>京ICP备11017824号-4 Copyright © 2006-2018 </p>
-			</div>
-		</div>
-		<script  th:src="@{/static/js/jquery.min.js}" ></script>
-		<script  th:src="@{/static/js/login.js}" ></script>
-	</body>
-</html>
+<head>
+    <meta charset="utf-8"/>
+    <title></title>
+    <!--		<link rel="stylesheet" type="text/css" th:href="@{css/login.css}">-->
+    <link rel="stylesheet" type="text/css" th:href="@{/static/css/login.css}">
+</head>
+<body class="bg01">
+<div class="wrapbag">
+    <div class="login">
+        <div class="tit">登录系统</div>
+        <form method="post" id="dataForm">
+            <div class="denglu_box">
+                <input type="text" value="admin" name="username" id="username" class="form-control name" placeholder="用户名" data-error="用户名不能为空" required>
+                <span class="tishi" id="userspan"></span>
+            </div>
+            <div class="denglu_box">
+                <input type="password" value="admin123" id="password" name="password" class="form-control password" placeholder="密码" data-error="密码不能为空" required>
+                <span class="tishi" id="passpan"></span>
+            </div>
+            <input type="button" id="loginbtn" class="btn" value="登录">
+            <div class="login-links">
+                <a class="wangji">忘记密码</a>
+                &nbsp; | &nbsp;
+                <a class="zhuce" th:href="@{/user/register}">注册</a>
+            </div>
+        </form>
+    </div>
+    <div class="footer  white">
+        <p>京ICP备11017824号-4 Copyright © 2006-2018 </p>
+    </div>
+    <div class="cuowu" id="errorPrompt"></div>
+</div>
+<script th:src="@{/static/js/jquery.min.js}"></script>
+<script th:src="@{/static/js/login.js}"></script>
+</body></html>

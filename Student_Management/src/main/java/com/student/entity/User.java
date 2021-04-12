@@ -1,7 +1,9 @@
 package com.student.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
+
 import java.util.Date;
+
 import com.baomidou.mybatisplus.annotation.TableId;
 import lombok.*;
 
@@ -19,18 +21,19 @@ import lombok.*;
 @AllArgsConstructor // 有参构造函数
 
 @EqualsAndHashCode()
-public class User  {
+public class User {
 
-private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
+    public static Object UserBuilder;
 
-@TableId(value = "userid", type = IdType.AUTO)
-private Integer userid;
+    @TableId(value = "userid", type = IdType.AUTO)
+    private Integer userid;
 
-private String username;
+    private String username;
 
-private String password;
+    private String password;
 
-private Date updatetime;
+    private Date updatetime;
 
 
-        }
+}

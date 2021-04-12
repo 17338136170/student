@@ -6,7 +6,7 @@ import org.apache.ibatis.annotations.Param;
 
 /**
  * <p>
- *  Mapper 接口
+ * Mapper 接口
  * </p>
  *
  * @author zhaohao
@@ -14,7 +14,9 @@ import org.apache.ibatis.annotations.Param;
  */
 public interface UserMapper extends BaseMapper<User> {
 
-    Integer insertUser(@Param(value = "user") User user);
+    Integer insertUser( User user);
 
     Integer login(User user);
+
+    Integer isExists(String username);
 }

@@ -6,7 +6,7 @@ import org.apache.ibatis.annotations.Param;
 
 /**
  * <p>
- *  服务类
+ * 服务类
  * </p>
  *
  * @author zhaohao
@@ -15,14 +15,23 @@ import org.apache.ibatis.annotations.Param;
 public interface UserService {
     /**
      * 注册用户
+     *
      * @param user
      */
     Integer insertUser(@Param(value = "user") User user);
 
     /**
      * 登陆
+     *
      * @param user
      * @return
      */
     Integer login(User user);
+
+    /**
+     * 判断用户名是否存在
+     * @param username
+     * @return
+     */
+    Integer isExists(@Param(value = "username") String username);
 }
